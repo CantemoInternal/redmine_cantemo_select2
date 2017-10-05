@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  jQuery(function() {
+  $("#issue_fixed_version_id").parent().hide();
+  var selectors = [
+  ".list_cf",
+  ".version_cf",
+  "#issue_project_id",
+  "#issue_tracker_id",
+  "#issue_priority_id",
+  "#issue_assigned_to_id",
+  "#issue_fixed_version_id",
+//  "#issue_status_id",
+  "#time_entry_activity_id"
+  ];
+  $.each(selectors, function(index, selector) {
+      $(selector).select2({ width: '60%' });
+    });
+  });
+</script>
